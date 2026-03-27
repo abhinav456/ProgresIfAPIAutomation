@@ -8,12 +8,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/abhinav456/ProgresIfAPIAutomation.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'mvn clean install'
