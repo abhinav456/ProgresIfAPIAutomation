@@ -1,0 +1,105 @@
+package api.Base;
+
+import api.endpoints.UserEndPoints;
+import api.payload.UserLogins;
+import api.utilities.ConfigManager;
+import api.utilities.ExtentManager;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import org.testng.ITestResult;
+import org.testng.annotations.*;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
+
+public class BaseTest {
+
+    protected static ExtentReports extent;
+    protected static ExtentTest test;
+
+    @BeforeSuite
+    public void setupReport() {
+        extent = ExtentManager.getInstance();
+    }
+
+    @BeforeClass
+    public void setupBaseURLAndLogin() throws IOException, InterruptedException {
+
+        // Set Base URL using ConfigManager
+        RestAssured.baseURI =
+                ConfigManager.getProperty("baseURL");
+
+        // Payload
+        Map<String, String> payload = new HashMap<>();
+        payload.put("grant_type", "password");
+        payload.put("username", UserLogins.getUsername());
+        payload.put("password", UserLogins.getPassword());
+        payload.put("version", "1.0.0");
+
+        // Headers
+        Map<String, String> headers = new HashMap<>();
+        headers.put("Content-Type", "application/json");
+
+        // Login Call
+        Response response = UserEndPoints.post(
+                "/user/login",
+                payload,
+                headers
+        );
+
+        response.then().log().all();
+
+        // Extract token
+        String accessToken =
+                response.jsonPath().getString("access_token");
+
+        // Save token
+        Properties tokenProp = new Properties();
+        tokenProp.setProperty("access_token", accessToken);
+
+        FileOutputStream fos =
+                new FileOutputStream("src/test/resources/token.properties");
+        tokenProp.store(fos, "Token Saved");
+        fos.close();
+
+        System.out.println("Token saved successfully");
+        //Sleep
+        Thread.sleep(2000);
+    }
+    @BeforeMethod
+    public void createTest(java.lang.reflect.Method method) {
+        test = extent.createTest(method.getName());
+    }
+
+    @AfterMethod
+    public void getResult(ITestResult result) {
+    	
+    	 String testName = result.getMethod().getMethodName();
+
+        if (result.getStatus() == ITestResult.SUCCESS) {
+            test.pass(testName +" API Testcase Passed");
+        } else if (result.getStatus() == ITestResult.FAILURE) {
+            test.fail(result.getThrowable());
+        } else {
+            test.skip("Test Skipped");
+        }
+    }
+
+    @AfterSuite
+    public void tearDownReport() throws IOException {
+        extent.flush();
+        // Path of report
+        String reportPath = System.getProperty("user.dir") 
+                + "/Reports/ProgresIfAPIReport.html";
+
+        // Open report automatically in default browser
+        java.awt.Desktop.getDesktop().browse(new java.io.File(reportPath).toURI());
+        
+    }
+}

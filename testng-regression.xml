@@ -1,0 +1,8 @@
+<suite name="Full Regression Suite">
+    <test name="All Tests">
+        <packages>
+            <package name="api.testcases.ding.user.MerchantDiscovery"/>
+            <package name="api.testcases.ding.user.USMS"/>
+        </packages>
+    </test>
+</suite>

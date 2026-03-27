@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Full Regression Suite]">
+  <test thread-count="5" name="All Tests(failed)">
+    <classes>
+      <class name="api.testcases.ding.user.USMSPayment">
+        <methods>
+          <include name="GetSessionForUSMSPayment"/>
+          <include name="createTest"/>
+          <include name="GetUSMSPaymentWallet"/>
+          <include name="getResult"/>
+          <include name="GetUSMSPaymentNewCard"/>
+          <include name="GetUSMSPaymentExitCard"/>
+          <include name="tearDownReport"/>
+          <include name="setupReport"/>
+          <include name="setupBaseURLAndLogin"/>
+        </methods>
+      </class> <!-- api.testcases.ding.user.USMSPayment -->
+      <class name="api.testcases.ding.user.USMS">
+        <methods>
+          <include name="GetMeterHistory"/>
+          <include name="GetUSMSDashbaord"/>
+          <include name="createTest"/>
+          <include name="getResult"/>
+          <include name="GetMeterDetails"/>
+          <include name="tearDownReport"/>
+          <include name="setupReport"/>
+          <include name="setupBaseURLAndLogin"/>
+        </methods>
+      </class> <!-- api.testcases.ding.user.USMS -->
+    </classes>
+  </test> <!-- All Tests(failed) -->
+</suite> <!-- Failed suite [Full Regression Suite] -->
