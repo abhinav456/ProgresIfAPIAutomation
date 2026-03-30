@@ -3,18 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant">
+      <class name="api.testcases.ding.user.USMS.USMSPayment">
         <methods>
           <include name="createTest"/>
           <include name="getResult"/>
-          <include name="RemoveFavorites"/>
-          <include name="GetAllFavorites"/>
-          <include name="SetFavorites"/>
+          <include name="GetUSMSPaymentWallet"/>
           <include name="tearDownReport"/>
           <include name="setupBaseURLAndLogin"/>
           <include name="setupReport"/>
         </methods>
-      </class> <!-- api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant -->
+      </class> <!-- api.testcases.ding.user.USMS.USMSPayment -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

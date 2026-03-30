@@ -118,7 +118,7 @@ public class USMSPayment extends BaseTest{
   public void GetUSMSPaymentWallet() {
 	  Map<String, Object> requestBodyPaymentWallet =
 	            USMSPayload.getUSMSPaymentWallet(
-	            		"5.00",
+	            		"2.00",
 	            		"55004884",
 	            		"ELECTRICITY"	    
 	            );

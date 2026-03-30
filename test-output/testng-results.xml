@@ -1,101 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="24" passed="24" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-30T15:28:25 IST" name="Full Regression Suite" finished-at="2026-03-30T15:28:54 IST" duration-ms="28560">
+  <suite started-at="2026-03-30T15:34:24 IST" name="Default suite" finished-at="2026-03-30T15:34:32 IST" duration-ms="8584">
     <groups>
     </groups>
-    <test started-at="2026-03-30T15:28:25 IST" name="All Tests" finished-at="2026-03-30T15:28:54 IST" duration-ms="28560">
-      <class name="api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant">
-        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-03-30T15:28:46 IST" name="setupBaseURLAndLogin" finished-at="2026-03-30T15:28:46 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBaseURLAndLogin -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-03-30T15:28:46 IST" name="createTest" finished-at="2026-03-30T15:28:46 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant.GetAllFavorites()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="GetAllFavorites()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-03-30T15:28:46 IST" name="GetAllFavorites" finished-at="2026-03-30T15:28:47 IST" duration-ms="953" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetAllFavorites -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-03-30T15:28:47 IST" name="getResult" finished-at="2026-03-30T15:28:47 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=GetAllFavorites status=SUCCESS method=MerchantDiscoveryMarkRemoveGetFavMerchant.GetAllFavorites()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-03-30T15:28:47 IST" name="createTest" finished-at="2026-03-30T15:28:47 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant.RemoveFavorites()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="RemoveFavorites()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-03-30T15:28:47 IST" name="RemoveFavorites" finished-at="2026-03-30T15:28:48 IST" duration-ms="874" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RemoveFavorites -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-03-30T15:28:48 IST" name="getResult" finished-at="2026-03-30T15:28:48 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=RemoveFavorites status=SUCCESS method=MerchantDiscoveryMarkRemoveGetFavMerchant.RemoveFavorites()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-03-30T15:28:48 IST" name="createTest" finished-at="2026-03-30T15:28:48 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant.SetFavorites()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="SetFavorites()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-03-30T15:28:48 IST" name="SetFavorites" finished-at="2026-03-30T15:28:49 IST" duration-ms="816" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetFavorites -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-03-30T15:28:49 IST" name="getResult" finished-at="2026-03-30T15:28:49 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SetFavorites status=SUCCESS method=MerchantDiscoveryMarkRemoveGetFavMerchant.SetFavorites()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant -->
+    <test started-at="2026-03-30T15:34:24 IST" name="Default test" finished-at="2026-03-30T15:34:32 IST" duration-ms="8584">
       <class name="api.testcases.ding.user.USMS.USMSPayment">
-        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-03-30T15:28:36 IST" name="setupBaseURLAndLogin" finished-at="2026-03-30T15:28:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4]" started-at="2026-03-30T15:34:16 IST" name="setupReport" finished-at="2026-03-30T15:34:24 IST" duration-ms="8087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4]" started-at="2026-03-30T15:34:24 IST" name="setupBaseURLAndLogin" finished-at="2026-03-30T15:34:24 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBaseURLAndLogin -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-03-30T15:28:36 IST" name="createTest" finished-at="2026-03-30T15:28:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4]" started-at="2026-03-30T15:34:24 IST" name="createTest" finished-at="2026-03-30T15:34:24 IST" duration-ms="12" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,22 +26,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetSessionForUSMSPayment()[pri:1, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-03-30T15:28:36 IST" name="GetSessionForUSMSPayment" finished-at="2026-03-30T15:28:39 IST" duration-ms="2534" status="PASS">
+        <test-method signature="GetSessionForUSMSPayment()[pri:1, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4]" started-at="2026-03-30T15:34:24 IST" name="GetSessionForUSMSPayment" finished-at="2026-03-30T15:34:26 IST" duration-ms="1645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetSessionForUSMSPayment -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-03-30T15:28:39 IST" name="getResult" finished-at="2026-03-30T15:28:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4]" started-at="2026-03-30T15:34:26 IST" name="getResult" finished-at="2026-03-30T15:34:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetSessionForUSMSPayment status=SUCCESS method=USMSPayment.GetSessionForUSMSPayment()[pri:1, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc] output={null}]]]>
+                <![CDATA[[TestResult name=GetSessionForUSMSPayment status=SUCCESS method=USMSPayment.GetSessionForUSMSPayment()[pri:1, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-03-30T15:28:39 IST" name="createTest" finished-at="2026-03-30T15:28:39 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4]" started-at="2026-03-30T15:34:26 IST" name="createTest" finished-at="2026-03-30T15:34:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -132,22 +52,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetUSMSPaymentNewCard()[pri:2, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-03-30T15:28:39 IST" name="GetUSMSPaymentNewCard" finished-at="2026-03-30T15:28:42 IST" duration-ms="2968" status="PASS">
+        <test-method signature="GetUSMSPaymentNewCard()[pri:2, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4]" started-at="2026-03-30T15:34:26 IST" name="GetUSMSPaymentNewCard" finished-at="2026-03-30T15:34:28 IST" duration-ms="2664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetUSMSPaymentNewCard -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-03-30T15:28:42 IST" name="getResult" finished-at="2026-03-30T15:28:42 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4]" started-at="2026-03-30T15:34:28 IST" name="getResult" finished-at="2026-03-30T15:34:28 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetUSMSPaymentNewCard status=SUCCESS method=USMSPayment.GetUSMSPaymentNewCard()[pri:2, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc] output={null}]]]>
+                <![CDATA[[TestResult name=GetUSMSPaymentNewCard status=SUCCESS method=USMSPayment.GetUSMSPaymentNewCard()[pri:2, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-03-30T15:28:42 IST" name="createTest" finished-at="2026-03-30T15:28:42 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4]" started-at="2026-03-30T15:34:28 IST" name="createTest" finished-at="2026-03-30T15:34:28 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -158,22 +78,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetUSMSPaymentExitCard()[pri:3, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-03-30T15:28:42 IST" name="GetUSMSPaymentExitCard" finished-at="2026-03-30T15:28:44 IST" duration-ms="2531" status="PASS">
+        <test-method signature="GetUSMSPaymentExitCard()[pri:3, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4]" started-at="2026-03-30T15:34:28 IST" name="GetUSMSPaymentExitCard" finished-at="2026-03-30T15:34:31 IST" duration-ms="2414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetUSMSPaymentExitCard -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-03-30T15:28:44 IST" name="getResult" finished-at="2026-03-30T15:28:44 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4]" started-at="2026-03-30T15:34:31 IST" name="getResult" finished-at="2026-03-30T15:34:31 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetUSMSPaymentExitCard status=SUCCESS method=USMSPayment.GetUSMSPaymentExitCard()[pri:3, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc] output={null}]]]>
+                <![CDATA[[TestResult name=GetUSMSPaymentExitCard status=SUCCESS method=USMSPayment.GetUSMSPaymentExitCard()[pri:3, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-03-30T15:28:44 IST" name="createTest" finished-at="2026-03-30T15:28:44 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4]" started-at="2026-03-30T15:34:31 IST" name="createTest" finished-at="2026-03-30T15:34:31 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -184,502 +104,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetUSMSPaymentWallet()[pri:4, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-03-30T15:28:44 IST" name="GetUSMSPaymentWallet" finished-at="2026-03-30T15:28:46 IST" duration-ms="1794" status="PASS">
+        <test-method signature="GetUSMSPaymentWallet()[pri:4, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4]" started-at="2026-03-30T15:34:31 IST" name="GetUSMSPaymentWallet" finished-at="2026-03-30T15:34:32 IST" duration-ms="1716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetUSMSPaymentWallet -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-03-30T15:28:46 IST" name="getResult" finished-at="2026-03-30T15:28:46 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4]" started-at="2026-03-30T15:34:32 IST" name="getResult" finished-at="2026-03-30T15:34:32 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetUSMSPaymentWallet status=SUCCESS method=USMSPayment.GetUSMSPaymentWallet()[pri:4, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc] output={null}]]]>
+                <![CDATA[[TestResult name=GetUSMSPaymentWallet status=SUCCESS method=USMSPayment.GetUSMSPaymentWallet()[pri:4, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-      </class> <!-- api.testcases.ding.user.USMS.USMSPayment -->
-      <class name="api.testcases.ding.user.USMS.USMS">
-        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-03-30T15:28:29 IST" name="setupBaseURLAndLogin" finished-at="2026-03-30T15:28:29 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBaseURLAndLogin -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-03-30T15:28:29 IST" name="createTest" finished-at="2026-03-30T15:28:29 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.USMS.USMS.GetUSMSDashbaord()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="GetUSMSDashbaord()[pri:1, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-03-30T15:28:29 IST" name="GetUSMSDashbaord" finished-at="2026-03-30T15:28:31 IST" duration-ms="1111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetUSMSDashbaord -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-03-30T15:28:31 IST" name="getResult" finished-at="2026-03-30T15:28:31 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=GetUSMSDashbaord status=SUCCESS method=USMS.GetUSMSDashbaord()[pri:1, instance:api.testcases.ding.user.USMS.USMS@5e5d171f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-03-30T15:28:31 IST" name="createTest" finished-at="2026-03-30T15:28:31 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.USMS.USMS.GetMeterDetails()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="GetMeterDetails()[pri:2, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-03-30T15:28:31 IST" name="GetMeterDetails" finished-at="2026-03-30T15:28:32 IST" duration-ms="1077" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetMeterDetails -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-03-30T15:28:32 IST" name="getResult" finished-at="2026-03-30T15:28:32 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=GetMeterDetails status=SUCCESS method=USMS.GetMeterDetails()[pri:2, instance:api.testcases.ding.user.USMS.USMS@5e5d171f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-03-30T15:28:32 IST" name="createTest" finished-at="2026-03-30T15:28:32 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.USMS.USMS.GetMeterHistory()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="GetMeterHistory()[pri:3, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-03-30T15:28:32 IST" name="GetMeterHistory" finished-at="2026-03-30T15:28:33 IST" duration-ms="906" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetMeterHistory -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-03-30T15:28:33 IST" name="getResult" finished-at="2026-03-30T15:28:33 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=GetMeterHistory status=SUCCESS method=USMS.GetMeterHistory()[pri:3, instance:api.testcases.ding.user.USMS.USMS@5e5d171f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- api.testcases.ding.user.USMS.USMS -->
-      <class name="api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-03-30T15:28:18 IST" name="setupReport" finished-at="2026-03-30T15:28:25 IST" duration-ms="7773" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-03-30T15:28:25 IST" name="setupBaseURLAndLogin" finished-at="2026-03-30T15:28:25 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBaseURLAndLogin -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-03-30T15:28:25 IST" name="createTest" finished-at="2026-03-30T15:28:25 IST" duration-ms="16" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery.GetMerchantDetail()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="GetMerchantDetail()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-03-30T15:28:25 IST" name="GetMerchantDetail" finished-at="2026-03-30T15:28:27 IST" duration-ms="1092" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetMerchantDetail -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-03-30T15:28:27 IST" name="getResult" finished-at="2026-03-30T15:28:27 IST" duration-ms="7" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=GetMerchantDetail status=SUCCESS method=MerchantDiscovery.GetMerchantDetail()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-03-30T15:28:27 IST" name="createTest" finished-at="2026-03-30T15:28:27 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery.MerchantDashboard()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="MerchantDashboard()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-03-30T15:28:27 IST" name="MerchantDashboard" finished-at="2026-03-30T15:28:28 IST" duration-ms="981" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MerchantDashboard -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-03-30T15:28:28 IST" name="getResult" finished-at="2026-03-30T15:28:28 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MerchantDashboard status=SUCCESS method=MerchantDiscovery.MerchantDashboard()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-03-30T15:28:28 IST" name="createTest" finished-at="2026-03-30T15:28:28 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery.DashboardMerchant()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="DashboardMerchant()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-03-30T15:28:28 IST" name="DashboardMerchant" finished-at="2026-03-30T15:28:29 IST" duration-ms="963" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DashboardMerchant -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-03-30T15:28:29 IST" name="getResult" finished-at="2026-03-30T15:28:29 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DashboardMerchant status=SUCCESS method=MerchantDiscovery.DashboardMerchant()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-03-30T15:28:29 IST" name="createTest" finished-at="2026-03-30T15:28:29 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery.GetAllFavourites()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="GetAllFavourites()[pri:4, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-03-30T15:28:29 IST" name="GetAllFavourites" finished-at="2026-03-30T15:28:29 IST" duration-ms="889" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetAllFavourites -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-03-30T15:28:29 IST" name="getResult" finished-at="2026-03-30T15:28:29 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=GetAllFavourites status=SUCCESS method=MerchantDiscovery.GetAllFavourites()[pri:4, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-03-30T15:28:54 IST" name="tearDownReport" finished-at="2026-03-30T15:28:55 IST" duration-ms="1377" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@3b0090a4]" started-at="2026-03-30T15:34:32 IST" name="tearDownReport" finished-at="2026-03-30T15:34:34 IST" duration-ms="1190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-      </class> <!-- api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery -->
-      <class name="api.testcases.ding.user.USMS.USMSUserMeter">
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-03-30T15:28:49 IST" name="createTest" finished-at="2026-03-30T15:28:49 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.USMS.USMSUserMeter.GetUSMSUserMeter()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-03-30T15:28:49 IST" name="setupBaseURLAndLogin" finished-at="2026-03-30T15:28:49 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBaseURLAndLogin -->
-        <test-method signature="GetUSMSUserMeter()[pri:1, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-03-30T15:28:49 IST" name="GetUSMSUserMeter" finished-at="2026-03-30T15:28:50 IST" duration-ms="941" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetUSMSUserMeter -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-03-30T15:28:50 IST" name="getResult" finished-at="2026-03-30T15:28:50 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=GetUSMSUserMeter status=SUCCESS method=USMSUserMeter.GetUSMSUserMeter()[pri:1, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-03-30T15:28:50 IST" name="createTest" finished-at="2026-03-30T15:28:50 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.USMS.USMSUserMeter.DeleteMeter()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="DeleteMeter()[pri:2, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-03-30T15:28:50 IST" name="DeleteMeter" finished-at="2026-03-30T15:28:50 IST" duration-ms="881" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteMeter -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-03-30T15:28:50 IST" name="getResult" finished-at="2026-03-30T15:28:50 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DeleteMeter status=SUCCESS method=USMSUserMeter.DeleteMeter()[pri:2, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-03-30T15:28:50 IST" name="createTest" finished-at="2026-03-30T15:28:50 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.USMS.USMSUserMeter.USMSMeterCreate()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="USMSMeterCreate()[pri:3, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-03-30T15:28:50 IST" name="USMSMeterCreate" finished-at="2026-03-30T15:28:51 IST" duration-ms="866" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- USMSMeterCreate -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-03-30T15:28:51 IST" name="getResult" finished-at="2026-03-30T15:28:51 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=USMSMeterCreate status=SUCCESS method=USMSUserMeter.USMSMeterCreate()[pri:3, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-03-30T15:28:51 IST" name="createTest" finished-at="2026-03-30T15:28:51 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.USMS.USMSUserMeter.USMSMeterUpdate()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="USMSMeterUpdate()[pri:4, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-03-30T15:28:51 IST" name="USMSMeterUpdate" finished-at="2026-03-30T15:28:52 IST" duration-ms="863" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- USMSMeterUpdate -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-03-30T15:28:52 IST" name="getResult" finished-at="2026-03-30T15:28:52 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=USMSMeterUpdate status=SUCCESS method=USMSUserMeter.USMSMeterUpdate()[pri:4, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- api.testcases.ding.user.USMS.USMSUserMeter -->
-      <class name="api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories">
-        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-03-30T15:28:33 IST" name="setupBaseURLAndLogin" finished-at="2026-03-30T15:28:33 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBaseURLAndLogin -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-03-30T15:28:33 IST" name="createTest" finished-at="2026-03-30T15:28:33 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories.GetAllCategories()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="GetAllCategories()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-03-30T15:28:33 IST" name="GetAllCategories" finished-at="2026-03-30T15:28:34 IST" duration-ms="979" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetAllCategories -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-03-30T15:28:34 IST" name="getResult" finished-at="2026-03-30T15:28:34 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=GetAllCategories status=SUCCESS method=MerchantDiscoveryCategories.GetAllCategories()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-03-30T15:28:34 IST" name="createTest" finished-at="2026-03-30T15:28:34 IST" duration-ms="5" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories.GetSingleID()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="GetSingleID()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-03-30T15:28:34 IST" name="GetSingleID" finished-at="2026-03-30T15:28:34 IST" duration-ms="821" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetSingleID -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-03-30T15:28:34 IST" name="getResult" finished-at="2026-03-30T15:28:34 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=GetSingleID status=SUCCESS method=MerchantDiscoveryCategories.GetSingleID()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-03-30T15:28:34 IST" name="createTest" finished-at="2026-03-30T15:28:34 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories.GetAllCategoriesBaseLImitOffset()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="GetAllCategoriesBaseLImitOffset()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-03-30T15:28:34 IST" name="GetAllCategoriesBaseLImitOffset" finished-at="2026-03-30T15:28:35 IST" duration-ms="854" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetAllCategoriesBaseLImitOffset -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-03-30T15:28:35 IST" name="getResult" finished-at="2026-03-30T15:28:35 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=GetAllCategoriesBaseLImitOffset status=SUCCESS method=MerchantDiscoveryCategories.GetAllCategoriesBaseLImitOffset()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-03-30T15:28:35 IST" name="createTest" finished-at="2026-03-30T15:28:35 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories.GetCategorieswithSortByOrderLimitOffset()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="GetCategorieswithSortByOrderLimitOffset()[pri:4, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-03-30T15:28:35 IST" name="GetCategorieswithSortByOrderLimitOffset" finished-at="2026-03-30T15:28:36 IST" duration-ms="851" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetCategorieswithSortByOrderLimitOffset -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-03-30T15:28:36 IST" name="getResult" finished-at="2026-03-30T15:28:36 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=GetCategorieswithSortByOrderLimitOffset status=SUCCESS method=MerchantDiscoveryCategories.GetCategorieswithSortByOrderLimitOffset()[pri:4, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories -->
-      <class name="api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter">
-        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-03-30T15:28:52 IST" name="setupBaseURLAndLogin" finished-at="2026-03-30T15:28:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBaseURLAndLogin -->
-        <test-method signature="MerchantSearch()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-03-30T15:28:52 IST" name="MerchantSearch" finished-at="2026-03-30T15:28:53 IST" duration-ms="871" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MerchantSearch -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-03-30T15:28:52 IST" name="createTest" finished-at="2026-03-30T15:28:52 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter.MerchantSearch()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-03-30T15:28:53 IST" name="getResult" finished-at="2026-03-30T15:28:53 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MerchantSearch status=SUCCESS method=MerchantDiscoverySearchFilter.MerchantSearch()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-03-30T15:28:53 IST" name="createTest" finished-at="2026-03-30T15:28:53 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter.GetNewJoiner()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="GetNewJoiner()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-03-30T15:28:53 IST" name="GetNewJoiner" finished-at="2026-03-30T15:28:54 IST" duration-ms="844" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetNewJoiner -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-03-30T15:28:54 IST" name="getResult" finished-at="2026-03-30T15:28:54 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=GetNewJoiner status=SUCCESS method=MerchantDiscoverySearchFilter.GetNewJoiner()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter -->
-    </test> <!-- All Tests -->
-  </suite> <!-- Full Regression Suite -->
+      </class> <!-- api.testcases.ding.user.USMS.USMSPayment -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
