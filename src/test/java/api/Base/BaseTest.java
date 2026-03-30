@@ -24,9 +24,44 @@ public class BaseTest {
     protected static ExtentTest test;
 
     @BeforeSuite
-    public void setupReport() {
-        extent = ExtentManager.getInstance();
-    }
+    public void setupReport() throws IOException, InterruptedException {
+    	 extent = ExtentManager.getInstance();
+
+    	    // Set Base URL
+    	    RestAssured.baseURI = ConfigManager.getProperty("baseURL");
+
+    	    // Payload
+    	    Map<String, String> payload = new HashMap<>();
+    	    payload.put("grant_type", "password");
+    	    payload.put("username", UserLogins.getUsername());
+    	    payload.put("password", UserLogins.getPassword());
+    	    payload.put("version", "1.0.0");
+
+    	    // Headers
+    	    Map<String, String> headers = new HashMap<>();
+    	    headers.put("Content-Type", "application/json");
+
+    	    // Login API
+    	    Response response = UserEndPoints.post(
+    	            "/user/login",
+    	            payload,
+    	            headers
+    	    );
+
+    	    String accessToken = response.jsonPath().getString("access_token");
+
+    	    Properties tokenProp = new Properties();
+    	    tokenProp.setProperty("access_token", accessToken);
+
+    	    FileOutputStream fos =
+    	            new FileOutputStream("src/test/resources/token.properties");
+    	    tokenProp.store(fos, "Token Saved");
+    	    fos.close();
+
+    	    System.out.println("Token saved successfully");
+
+            Thread.sleep(2000);
+    	}
 
     @BeforeClass
     public void setupBaseURLAndLogin() throws IOException, InterruptedException {
@@ -35,42 +70,6 @@ public class BaseTest {
         RestAssured.baseURI =
                 ConfigManager.getProperty("baseURL");
 
-        // Payload
-        Map<String, String> payload = new HashMap<>();
-        payload.put("grant_type", "password");
-        payload.put("username", UserLogins.getUsername());
-        payload.put("password", UserLogins.getPassword());
-        payload.put("version", "1.0.0");
-
-        // Headers
-        Map<String, String> headers = new HashMap<>();
-        headers.put("Content-Type", "application/json");
-
-        // Login Call
-        Response response = UserEndPoints.post(
-                "/user/login",
-                payload,
-                headers
-        );
-
-        response.then().log().all();
-
-        // Extract token
-        String accessToken =
-                response.jsonPath().getString("access_token");
-
-        // Save token
-        Properties tokenProp = new Properties();
-        tokenProp.setProperty("access_token", accessToken);
-
-        FileOutputStream fos =
-                new FileOutputStream("src/test/resources/token.properties");
-        tokenProp.store(fos, "Token Saved");
-        fos.close();
-
-        System.out.println("Token saved successfully");
-        //Sleep
-        Thread.sleep(2000);
     }
     @BeforeMethod
     public void createTest(java.lang.reflect.Method method) {
