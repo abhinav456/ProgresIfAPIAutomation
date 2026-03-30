@@ -3,28 +3,22 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/abhinav456/ProgresIfAPIAutomation.git'
-            }
-        }
-
         stage('Build') {
             steps {
-                bat 'mvn clean install'
+                bat '"C:\\Users\\user\\apache-maven-3.9.14-bin\\apache-maven-3.9.14\\bin\\mvn.cmd" clean install'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'mvn test'
+                bat '"C:\\Users\\user\\apache-maven-3.9.14-bin\\apache-maven-3.9.14\\bin\\mvn.cmd" test'
             }
         }
     }
 
     post {
         always {
-            junit '**/target/surefire-reports/*.xml'
+            junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml'
         }
     }
 }
