@@ -80,7 +80,7 @@ public class USMSPayload {
 	}
 	
 	public static Map<String, Object> getUSMSPaymentWallet(
-	        double amount,
+	        String amount,
 	        String meterNumber,
 	        String meterType) {
 

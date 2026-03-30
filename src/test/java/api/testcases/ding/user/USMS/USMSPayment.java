@@ -19,8 +19,36 @@ public class USMSPayment extends BaseTest{
 	
 	String SessionID;
 	String OrderId;
+
+	@Test(priority=1)
+	  public void GetUSMSPaymentWallet() {
+		  Map<String, Object> requestBodyPaymentWallet =
+		            USMSPayload.getUSMSPaymentWallet(
+		            		 "2.00",
+		            		"55004884",
+		            		"ELECTRICITY"	    
+		            );
+
+		    Response response =
+		    		 given()
+	               .header("Authorization", 
+	                       "Bearer " + ConfigManager.getProperty("access_token"))
+		                    .contentType("application/json")
+		                    .body(requestBodyPaymentWallet)
+		            .when()
+		                    .post("/ding/pay/usms/wallet")
+		            .then()
+		            .log().all()
+		            .extract().response();
+
+		    Assert.assertEquals(response.getStatusCode(), 200);
+		    Assert.assertTrue(response.getTime() < 20000);
+		    
+		    test.info("Response Body: " + response.asPrettyString());
+		    
+	  }
 	
-  @Test(priority=1)
+  @Test(priority=2)
   public void GetSessionForUSMSPayment() {
 	  Map<String, Object> requestBodySessionPayment =
 	            USMSPayload.GetSessionUSMSPayment(
@@ -54,7 +82,7 @@ public class USMSPayment extends BaseTest{
 	    test.info("Response Body: " + response.asPrettyString());
 	    
   }
-  @Test(priority=2)
+  @Test(priority=3)
   public void GetUSMSPaymentNewCard() {
 	  Map<String, Object> requestBodyCardPayment =
 	            USMSPayload.getUSMSCardPayment(
@@ -85,7 +113,7 @@ public class USMSPayment extends BaseTest{
 	    
   }
   
-  @Test(priority=3)
+  @Test(priority=4)
   public void GetUSMSPaymentExitCard() {
 	  Map<String, Object> requestBodyExitCardPayment =
 	            USMSPayload.getUSMSPaymentExitCard(
@@ -114,31 +142,6 @@ public class USMSPayment extends BaseTest{
 	    test.info("Response Body: " + response.asPrettyString());
 	    
   }
-  @Test(priority=4)
-  public void GetUSMSPaymentWallet() {
-	  Map<String, Object> requestBodyPaymentWallet =
-	            USMSPayload.getUSMSPaymentWallet(
-	            		 4.00,
-	            		"55004884",
-	            		"ELECTRICITY"	    
-	            );
-
-	    Response response =
-	    		 given()
-               .header("Authorization", 
-                       "Bearer " + ConfigManager.getProperty("access_token"))
-	                    .contentType("application/json")
-	                    .body(requestBodyPaymentWallet)
-	            .when()
-	                    .post("/ding/pay/usms/wallet")
-	            .then()
-	                    .extract().response();
-
-	    Assert.assertEquals(response.getStatusCode(), 200);
-	    Assert.assertTrue(response.getTime() < 20000);
-	    
-	    test.info("Response Body: " + response.asPrettyString());
-	    
-  }
+  
   
 }
