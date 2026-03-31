@@ -59,8 +59,6 @@ public class BaseTest {
     	    fos.close();
 
     	    System.out.println("Token saved successfully");
-
-            Thread.sleep(2000);
     	}
 
     @BeforeClass
