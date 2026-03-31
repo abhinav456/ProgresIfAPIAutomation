@@ -2,7 +2,7 @@ package api.payload;
 
 public class UserLogins {
 
-    private static final String USERNAME = "izzulding@gmail.com";//Another user ismailding@progresif.com
+    private static final String USERNAME = "ismailding@progresif.com";//Another user izzulding@gmail.com
     private static final String PASSWORD = "Progresif@123";
 
     public static String getUsername() {

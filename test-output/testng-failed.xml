@@ -3,16 +3,93 @@
 <suite name="Failed suite [Full Regression Suite]">
   <test thread-count="5" name="All Tests(failed)">
     <classes>
-      <class name="api.testcases.ding.user.USMS.USMSPayment">
+      <class name="api.testcases.ding.user.USMS.USMSUserMeter">
         <methods>
+          <include name="GetUSMSUserMeter"/>
+          <include name="DeleteMeter"/>
           <include name="createTest"/>
           <include name="getResult"/>
+          <include name="USMSMeterUpdate"/>
+          <include name="USMSMeterCreate"/>
+          <include name="tearDownReport"/>
+          <include name="setupReport"/>
+          <include name="setupBaseURLAndLogin"/>
+        </methods>
+      </class> <!-- api.testcases.ding.user.USMS.USMSUserMeter -->
+      <class name="api.testcases.ding.user.USMS.USMSPayment">
+        <methods>
+          <include name="GetUSMSPaymentExitCard"/>
+          <include name="GetSessionForUSMSPayment"/>
+          <include name="createTest"/>
+          <include name="getResult"/>
+          <include name="GetUSMSPaymentWallet"/>
           <include name="GetUSMSPaymentNewCard"/>
           <include name="tearDownReport"/>
           <include name="setupReport"/>
           <include name="setupBaseURLAndLogin"/>
         </methods>
       </class> <!-- api.testcases.ding.user.USMS.USMSPayment -->
+      <class name="api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter">
+        <methods>
+          <include name="createTest"/>
+          <include name="getResult"/>
+          <include name="MerchantSearch"/>
+          <include name="GetNewJoiner"/>
+          <include name="tearDownReport"/>
+          <include name="setupReport"/>
+          <include name="setupBaseURLAndLogin"/>
+        </methods>
+      </class> <!-- api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter -->
+      <class name="api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant">
+        <methods>
+          <include name="createTest"/>
+          <include name="getResult"/>
+          <include name="RemoveFavorites"/>
+          <include name="GetAllFavorites"/>
+          <include name="SetFavorites"/>
+          <include name="tearDownReport"/>
+          <include name="setupBaseURLAndLogin"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant -->
+      <class name="api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories">
+        <methods>
+          <include name="createTest"/>
+          <include name="GetAllCategories"/>
+          <include name="getResult"/>
+          <include name="GetCategorieswithSortByOrderLimitOffset"/>
+          <include name="GetAllCategoriesBaseLImitOffset"/>
+          <include name="tearDownReport"/>
+          <include name="setupBaseURLAndLogin"/>
+          <include name="GetSingleID"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories -->
+      <class name="api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery">
+        <methods>
+          <include name="GetAllFavourites"/>
+          <include name="createTest"/>
+          <include name="getResult"/>
+          <include name="DashboardMerchant"/>
+          <include name="tearDownReport"/>
+          <include name="GetMerchantDetail"/>
+          <include name="setupBaseURLAndLogin"/>
+          <include name="MerchantDashboard"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery -->
+      <class name="api.testcases.ding.user.USMS.USMS">
+        <methods>
+          <include name="createTest"/>
+          <include name="getResult"/>
+          <include name="GetMeterHistory"/>
+          <include name="GetUSMSDashbaord"/>
+          <include name="GetMeterDetails"/>
+          <include name="tearDownReport"/>
+          <include name="setupBaseURLAndLogin"/>
+          <include name="setupReport"/>
+        </methods>
+      </class> <!-- api.testcases.ding.user.USMS.USMS -->
     </classes>
   </test> <!-- All Tests(failed) -->
 </suite> <!-- Failed suite [Full Regression Suite] -->
