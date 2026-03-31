@@ -24,7 +24,7 @@ public class BaseTest {
     protected static ExtentTest test;
 
     @BeforeSuite
-    public void setupReport() throws IOException, InterruptedException {
+    public void setupReport() throws IOException {
     	 extent = ExtentManager.getInstance();
 
     	    // Set Base URL
@@ -59,6 +59,7 @@ public class BaseTest {
     	    fos.close();
 
     	    System.out.println("Token saved successfully");
+    	    
     	}
 
     @BeforeClass
