@@ -1,4 +1,4 @@
-<suite name="Full Regression Suite">
+<suite name="Progresif API  Regression Suite">
     <test name="All Tests">
         <packages>
             <package name="api.testcases.ding.user.MerchantDiscovery"/>
