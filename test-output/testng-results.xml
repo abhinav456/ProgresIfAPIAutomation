@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="24" passed="0" failed="24" skipped="0">
+<testng-results ignored="0" total="24" passed="24" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-07T16:16:01 IST" name="Progresif API  Regression Suite" finished-at="2026-04-07T16:16:09 IST" duration-ms="8155">
+  <suite started-at="2026-04-07T16:17:53 IST" name="Progresif API  Regression Suite" finished-at="2026-04-07T16:18:37 IST" duration-ms="43986">
     <groups>
     </groups>
-    <test started-at="2026-04-07T16:16:01 IST" name="All Tests" finished-at="2026-04-07T16:16:09 IST" duration-ms="8155">
+    <test started-at="2026-04-07T16:17:53 IST" name="All Tests" finished-at="2026-04-07T16:18:37 IST" duration-ms="43986">
       <class name="api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant">
-        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:16:06 IST" name="setupBaseURLAndLogin" finished-at="2026-04-07T16:16:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:18:34 IST" name="setupBaseURLAndLogin" finished-at="2026-04-07T16:18:34 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBaseURLAndLogin -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:16:06 IST" name="createTest" finished-at="2026-04-07T16:16:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:18:34 IST" name="createTest" finished-at="2026-04-07T16:18:34 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,116 +22,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetAllFavorites()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:16:06 IST" name="GetAllFavorites" finished-at="2026-04-07T16:16:06 IST" duration-ms="321" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant.GetAllFavorites(MerchantDiscoveryMarkRemoveGetFavMerchant.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="GetAllFavorites()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:18:34 IST" name="GetAllFavorites" finished-at="2026-04-07T16:18:34 IST" duration-ms="429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetAllFavorites -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:16:06 IST" name="getResult" finished-at="2026-04-07T16:16:06 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:18:34 IST" name="getResult" finished-at="2026-04-07T16:18:34 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetAllFavorites status=FAILURE method=MerchantDiscoveryMarkRemoveGetFavMerchant.GetAllFavorites()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7] output={null}]]]>
+                <![CDATA[[TestResult name=GetAllFavorites status=SUCCESS method=MerchantDiscoveryMarkRemoveGetFavMerchant.GetAllFavorites()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="RemoveFavorites()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:16:06 IST" name="RemoveFavorites" finished-at="2026-04-07T16:16:07 IST" duration-ms="310" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant.RemoveFavorites(MerchantDiscoveryMarkRemoveGetFavMerchant.java:50)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RemoveFavorites -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:16:06 IST" name="createTest" finished-at="2026-04-07T16:16:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:18:34 IST" name="createTest" finished-at="2026-04-07T16:18:34 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -142,18 +48,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:16:07 IST" name="getResult" finished-at="2026-04-07T16:16:07 IST" duration-ms="1" status="PASS">
+        <test-method signature="RemoveFavorites()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:18:34 IST" name="RemoveFavorites" finished-at="2026-04-07T16:18:35 IST" duration-ms="366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RemoveFavorites -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:18:35 IST" name="getResult" finished-at="2026-04-07T16:18:35 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=RemoveFavorites status=FAILURE method=MerchantDiscoveryMarkRemoveGetFavMerchant.RemoveFavorites()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7] output={null}]]]>
+                <![CDATA[[TestResult name=RemoveFavorites status=SUCCESS method=MerchantDiscoveryMarkRemoveGetFavMerchant.RemoveFavorites()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:16:07 IST" name="createTest" finished-at="2026-04-07T16:16:07 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:18:35 IST" name="createTest" finished-at="2026-04-07T16:18:35 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -164,60 +74,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="SetFavorites()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:16:07 IST" name="SetFavorites" finished-at="2026-04-07T16:16:07 IST" duration-ms="304" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant.SetFavorites(MerchantDiscoveryMarkRemoveGetFavMerchant.java:73)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="SetFavorites()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:18:35 IST" name="SetFavorites" finished-at="2026-04-07T16:18:35 IST" duration-ms="318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetFavorites -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:16:07 IST" name="getResult" finished-at="2026-04-07T16:16:07 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7]" started-at="2026-04-07T16:18:35 IST" name="getResult" finished-at="2026-04-07T16:18:35 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SetFavorites status=FAILURE method=MerchantDiscoveryMarkRemoveGetFavMerchant.SetFavorites()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7] output={null}]]]>
+                <![CDATA[[TestResult name=SetFavorites status=SUCCESS method=MerchantDiscoveryMarkRemoveGetFavMerchant.SetFavorites()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant@d35dea7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -226,7 +91,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- getResult -->
       </class> <!-- api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryMarkRemoveGetFavMerchant -->
       <class name="api.testcases.ding.user.USMS.USMSPayment">
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:16:05 IST" name="createTest" finished-at="2026-04-07T16:16:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:17:58 IST" name="setupBaseURLAndLogin" finished-at="2026-04-07T16:17:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBaseURLAndLogin -->
+        <test-method signature="GetSessionForUSMSPayment()[pri:1, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:17:58 IST" name="GetSessionForUSMSPayment" finished-at="2026-04-07T16:18:00 IST" duration-ms="1951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetSessionForUSMSPayment -->
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:17:58 IST" name="createTest" finished-at="2026-04-07T16:17:58 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -237,120 +110,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:16:05 IST" name="setupBaseURLAndLogin" finished-at="2026-04-07T16:16:05 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBaseURLAndLogin -->
-        <test-method signature="GetSessionForUSMSPayment()[pri:1, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:16:05 IST" name="GetSessionForUSMSPayment" finished-at="2026-04-07T16:16:05 IST" duration-ms="302" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.USMS.USMSPayment.GetSessionForUSMSPayment(USMSPayment.java:47)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetSessionForUSMSPayment -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:16:05 IST" name="getResult" finished-at="2026-04-07T16:16:05 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:18:00 IST" name="getResult" finished-at="2026-04-07T16:18:00 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetSessionForUSMSPayment status=FAILURE method=USMSPayment.GetSessionForUSMSPayment()[pri:1, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc] output={null}]]]>
+                <![CDATA[[TestResult name=GetSessionForUSMSPayment status=SUCCESS method=USMSPayment.GetSessionForUSMSPayment()[pri:1, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="GetUSMSPaymentNewCard()[pri:2, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:16:05 IST" name="GetUSMSPaymentNewCard" finished-at="2026-04-07T16:16:05 IST" duration-ms="312" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.USMS.USMSPayment.GetUSMSPaymentNewCard(USMSPayment.java:81)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetUSMSPaymentNewCard -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:16:05 IST" name="createTest" finished-at="2026-04-07T16:16:05 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:18:00 IST" name="createTest" finished-at="2026-04-07T16:18:00 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -361,18 +132,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:16:05 IST" name="getResult" finished-at="2026-04-07T16:16:05 IST" duration-ms="0" status="PASS">
+        <test-method signature="GetUSMSPaymentNewCard()[pri:2, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:18:00 IST" name="GetUSMSPaymentNewCard" finished-at="2026-04-07T16:18:12 IST" duration-ms="11822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUSMSPaymentNewCard -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:18:12 IST" name="getResult" finished-at="2026-04-07T16:18:12 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetUSMSPaymentNewCard status=FAILURE method=USMSPayment.GetUSMSPaymentNewCard()[pri:2, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc] output={null}]]]>
+                <![CDATA[[TestResult name=GetUSMSPaymentNewCard status=SUCCESS method=USMSPayment.GetUSMSPaymentNewCard()[pri:2, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:16:05 IST" name="createTest" finished-at="2026-04-07T16:16:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:18:12 IST" name="createTest" finished-at="2026-04-07T16:18:12 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -383,116 +158,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetUSMSPaymentExitCard()[pri:3, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:16:05 IST" name="GetUSMSPaymentExitCard" finished-at="2026-04-07T16:16:06 IST" duration-ms="300" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.USMS.USMSPayment.GetUSMSPaymentExitCard(USMSPayment.java:111)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="GetUSMSPaymentExitCard()[pri:3, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:18:12 IST" name="GetUSMSPaymentExitCard" finished-at="2026-04-07T16:18:23 IST" duration-ms="11437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetUSMSPaymentExitCard -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:16:06 IST" name="getResult" finished-at="2026-04-07T16:16:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:18:23 IST" name="getResult" finished-at="2026-04-07T16:18:23 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetUSMSPaymentExitCard status=FAILURE method=USMSPayment.GetUSMSPaymentExitCard()[pri:3, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc] output={null}]]]>
+                <![CDATA[[TestResult name=GetUSMSPaymentExitCard status=SUCCESS method=USMSPayment.GetUSMSPaymentExitCard()[pri:3, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="GetUSMSPaymentWallet()[pri:4, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:16:06 IST" name="GetUSMSPaymentWallet" finished-at="2026-04-07T16:16:06 IST" duration-ms="376" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.USMS.USMSPayment.GetUSMSPaymentWallet(USMSPayment.java:139)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetUSMSPaymentWallet -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:16:06 IST" name="createTest" finished-at="2026-04-07T16:16:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:18:23 IST" name="createTest" finished-at="2026-04-07T16:18:23 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -503,11 +184,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:16:06 IST" name="getResult" finished-at="2026-04-07T16:16:06 IST" duration-ms="3" status="PASS">
+        <test-method signature="GetUSMSPaymentWallet()[pri:4, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:18:23 IST" name="GetUSMSPaymentWallet" finished-at="2026-04-07T16:18:34 IST" duration-ms="10776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUSMSPaymentWallet -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc]" started-at="2026-04-07T16:18:34 IST" name="getResult" finished-at="2026-04-07T16:18:34 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetUSMSPaymentWallet status=FAILURE method=USMSPayment.GetUSMSPaymentWallet()[pri:4, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc] output={null}]]]>
+                <![CDATA[[TestResult name=GetUSMSPaymentWallet status=SUCCESS method=USMSPayment.GetUSMSPaymentWallet()[pri:4, instance:api.testcases.ding.user.USMS.USMSPayment@24313fcc] output={null}]]]>
               </value>
             </param>
           </params>
@@ -516,11 +201,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- getResult -->
       </class> <!-- api.testcases.ding.user.USMS.USMSPayment -->
       <class name="api.testcases.ding.user.USMS.USMS">
-        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:16:02 IST" name="setupBaseURLAndLogin" finished-at="2026-04-07T16:16:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:17:55 IST" name="setupBaseURLAndLogin" finished-at="2026-04-07T16:17:55 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBaseURLAndLogin -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:16:02 IST" name="createTest" finished-at="2026-04-07T16:16:02 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:17:55 IST" name="createTest" finished-at="2026-04-07T16:17:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -531,67 +216,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetUSMSDashbaord()[pri:1, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:16:02 IST" name="GetUSMSDashbaord" finished-at="2026-04-07T16:16:03 IST" duration-ms="315" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.USMS.USMS.GetUSMSDashbaord(USMS.java:31)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="GetUSMSDashbaord()[pri:1, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:17:55 IST" name="GetUSMSDashbaord" finished-at="2026-04-07T16:17:56 IST" duration-ms="435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetUSMSDashbaord -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:16:03 IST" name="getResult" finished-at="2026-04-07T16:16:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:17:56 IST" name="getResult" finished-at="2026-04-07T16:17:56 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetUSMSDashbaord status=FAILURE method=USMS.GetUSMSDashbaord()[pri:1, instance:api.testcases.ding.user.USMS.USMS@5e5d171f] output={null}]]]>
+                <![CDATA[[TestResult name=GetUSMSDashbaord status=SUCCESS method=USMS.GetUSMSDashbaord()[pri:1, instance:api.testcases.ding.user.USMS.USMS@5e5d171f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:16:03 IST" name="createTest" finished-at="2026-04-07T16:16:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:17:56 IST" name="createTest" finished-at="2026-04-07T16:17:56 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -602,67 +242,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetMeterDetails()[pri:2, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:16:03 IST" name="GetMeterDetails" finished-at="2026-04-07T16:16:03 IST" duration-ms="272" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.USMS.USMS.GetMeterDetails(USMS.java:56)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="GetMeterDetails()[pri:2, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:17:56 IST" name="GetMeterDetails" finished-at="2026-04-07T16:17:56 IST" duration-ms="447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetMeterDetails -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:16:03 IST" name="getResult" finished-at="2026-04-07T16:16:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:17:56 IST" name="getResult" finished-at="2026-04-07T16:17:56 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetMeterDetails status=FAILURE method=USMS.GetMeterDetails()[pri:2, instance:api.testcases.ding.user.USMS.USMS@5e5d171f] output={null}]]]>
+                <![CDATA[[TestResult name=GetMeterDetails status=SUCCESS method=USMS.GetMeterDetails()[pri:2, instance:api.testcases.ding.user.USMS.USMS@5e5d171f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:16:03 IST" name="createTest" finished-at="2026-04-07T16:16:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:17:56 IST" name="createTest" finished-at="2026-04-07T16:17:56 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -673,60 +268,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetMeterHistory()[pri:3, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:16:03 IST" name="GetMeterHistory" finished-at="2026-04-07T16:16:03 IST" duration-ms="314" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.USMS.USMS.GetMeterHistory(USMS.java:82)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="GetMeterHistory()[pri:3, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:17:56 IST" name="GetMeterHistory" finished-at="2026-04-07T16:17:57 IST" duration-ms="326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetMeterHistory -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:16:03 IST" name="getResult" finished-at="2026-04-07T16:16:03 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMS@5e5d171f]" started-at="2026-04-07T16:17:57 IST" name="getResult" finished-at="2026-04-07T16:17:57 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetMeterHistory status=FAILURE method=USMS.GetMeterHistory()[pri:3, instance:api.testcases.ding.user.USMS.USMS@5e5d171f] output={null}]]]>
+                <![CDATA[[TestResult name=GetMeterHistory status=SUCCESS method=USMS.GetMeterHistory()[pri:3, instance:api.testcases.ding.user.USMS.USMS@5e5d171f] output={null}]]]>
               </value>
             </param>
           </params>
@@ -735,15 +285,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- getResult -->
       </class> <!-- api.testcases.ding.user.USMS.USMS -->
       <class name="api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:15:54 IST" name="setupReport" finished-at="2026-04-07T16:16:01 IST" duration-ms="6063" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:17:47 IST" name="setupReport" finished-at="2026-04-07T16:17:53 IST" duration-ms="6354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:16:01 IST" name="setupBaseURLAndLogin" finished-at="2026-04-07T16:16:01 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:17:53 IST" name="setupBaseURLAndLogin" finished-at="2026-04-07T16:17:53 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBaseURLAndLogin -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:16:01 IST" name="createTest" finished-at="2026-04-07T16:16:01 IST" duration-ms="21" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:17:53 IST" name="createTest" finished-at="2026-04-07T16:17:53 IST" duration-ms="13" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -754,67 +304,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetMerchantDetail()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:16:01 IST" name="GetMerchantDetail" finished-at="2026-04-07T16:16:01 IST" duration-ms="595" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery.GetMerchantDetail(MerchantDiscovery.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="GetMerchantDetail()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:17:53 IST" name="GetMerchantDetail" finished-at="2026-04-07T16:17:54 IST" duration-ms="536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetMerchantDetail -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:16:01 IST" name="getResult" finished-at="2026-04-07T16:16:01 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:17:54 IST" name="getResult" finished-at="2026-04-07T16:17:54 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetMerchantDetail status=FAILURE method=MerchantDiscovery.GetMerchantDetail()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559] output={null}]]]>
+                <![CDATA[[TestResult name=GetMerchantDetail status=SUCCESS method=MerchantDiscovery.GetMerchantDetail()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:16:01 IST" name="createTest" finished-at="2026-04-07T16:16:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:17:54 IST" name="createTest" finished-at="2026-04-07T16:17:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -825,116 +330,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="MerchantDashboard()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:16:01 IST" name="MerchantDashboard" finished-at="2026-04-07T16:16:02 IST" duration-ms="354" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery.MerchantDashboard(MerchantDiscovery.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="MerchantDashboard()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:17:54 IST" name="MerchantDashboard" finished-at="2026-04-07T16:17:55 IST" duration-ms="465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MerchantDashboard -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:16:02 IST" name="getResult" finished-at="2026-04-07T16:16:02 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:17:55 IST" name="getResult" finished-at="2026-04-07T16:17:55 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MerchantDashboard status=FAILURE method=MerchantDiscovery.MerchantDashboard()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559] output={null}]]]>
+                <![CDATA[[TestResult name=MerchantDashboard status=SUCCESS method=MerchantDiscovery.MerchantDashboard()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="DashboardMerchant()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:16:02 IST" name="DashboardMerchant" finished-at="2026-04-07T16:16:02 IST" duration-ms="364" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery.DashboardMerchant(MerchantDiscovery.java:68)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DashboardMerchant -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:16:02 IST" name="createTest" finished-at="2026-04-07T16:16:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:17:55 IST" name="createTest" finished-at="2026-04-07T16:17:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -945,67 +356,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:16:02 IST" name="getResult" finished-at="2026-04-07T16:16:02 IST" duration-ms="1" status="PASS">
+        <test-method signature="DashboardMerchant()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:17:55 IST" name="DashboardMerchant" finished-at="2026-04-07T16:17:55 IST" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DashboardMerchant -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:17:55 IST" name="getResult" finished-at="2026-04-07T16:17:55 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DashboardMerchant status=FAILURE method=MerchantDiscovery.DashboardMerchant()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559] output={null}]]]>
+                <![CDATA[[TestResult name=DashboardMerchant status=SUCCESS method=MerchantDiscovery.DashboardMerchant()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="GetAllFavourites()[pri:4, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:16:02 IST" name="GetAllFavourites" finished-at="2026-04-07T16:16:02 IST" duration-ms="338" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery.GetAllFavourites(MerchantDiscovery.java:89)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetAllFavourites -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:16:02 IST" name="createTest" finished-at="2026-04-07T16:16:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:17:55 IST" name="createTest" finished-at="2026-04-07T16:17:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1016,28 +382,32 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:16:02 IST" name="getResult" finished-at="2026-04-07T16:16:02 IST" duration-ms="2" status="PASS">
+        <test-method signature="GetAllFavourites()[pri:4, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:17:55 IST" name="GetAllFavourites" finished-at="2026-04-07T16:17:55 IST" duration-ms="377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllFavourites -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:17:55 IST" name="getResult" finished-at="2026-04-07T16:17:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetAllFavourites status=FAILURE method=MerchantDiscovery.GetAllFavourites()[pri:4, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559] output={null}]]]>
+                <![CDATA[[TestResult name=GetAllFavourites status=SUCCESS method=MerchantDiscovery.GetAllFavourites()[pri:4, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:16:09 IST" name="tearDownReport" finished-at="2026-04-07T16:16:10 IST" duration-ms="1322" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery@2362f559]" started-at="2026-04-07T16:18:37 IST" name="tearDownReport" finished-at="2026-04-07T16:18:39 IST" duration-ms="1597" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
       </class> <!-- api.testcases.ding.user.MerchantDiscovery.MerchantDiscovery -->
       <class name="api.testcases.ding.user.USMS.USMSUserMeter">
-        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:16:07 IST" name="setupBaseURLAndLogin" finished-at="2026-04-07T16:16:07 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:18:35 IST" name="setupBaseURLAndLogin" finished-at="2026-04-07T16:18:35 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBaseURLAndLogin -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:16:07 IST" name="createTest" finished-at="2026-04-07T16:16:07 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:18:35 IST" name="createTest" finished-at="2026-04-07T16:18:35 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1048,67 +418,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetUSMSUserMeter()[pri:1, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:16:07 IST" name="GetUSMSUserMeter" finished-at="2026-04-07T16:16:07 IST" duration-ms="317" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.USMS.USMSUserMeter.GetUSMSUserMeter(USMSUserMeter.java:32)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="GetUSMSUserMeter()[pri:1, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:18:35 IST" name="GetUSMSUserMeter" finished-at="2026-04-07T16:18:36 IST" duration-ms="450" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetUSMSUserMeter -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:16:07 IST" name="getResult" finished-at="2026-04-07T16:16:07 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:18:36 IST" name="getResult" finished-at="2026-04-07T16:18:36 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetUSMSUserMeter status=FAILURE method=USMSUserMeter.GetUSMSUserMeter()[pri:1, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b] output={null}]]]>
+                <![CDATA[[TestResult name=GetUSMSUserMeter status=SUCCESS method=USMSUserMeter.GetUSMSUserMeter()[pri:1, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:16:07 IST" name="createTest" finished-at="2026-04-07T16:16:07 IST" duration-ms="3" status="PASS">
+        <test-method signature="DeleteMeter()[pri:2, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:18:36 IST" name="DeleteMeter" finished-at="2026-04-07T16:18:36 IST" duration-ms="408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteMeter -->
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:18:36 IST" name="createTest" finished-at="2026-04-07T16:18:36 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1119,116 +448,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="DeleteMeter()[pri:2, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:16:07 IST" name="DeleteMeter" finished-at="2026-04-07T16:16:07 IST" duration-ms="300" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.USMS.USMSUserMeter.DeleteMeter(USMSUserMeter.java:52)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteMeter -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:16:07 IST" name="getResult" finished-at="2026-04-07T16:16:07 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:18:36 IST" name="getResult" finished-at="2026-04-07T16:18:36 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DeleteMeter status=FAILURE method=USMSUserMeter.DeleteMeter()[pri:2, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b] output={null}]]]>
+                <![CDATA[[TestResult name=DeleteMeter status=SUCCESS method=USMSUserMeter.DeleteMeter()[pri:2, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="USMSMeterCreate()[pri:3, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:16:07 IST" name="USMSMeterCreate" finished-at="2026-04-07T16:16:08 IST" duration-ms="245" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.USMS.USMSUserMeter.USMSMeterCreate(USMSUserMeter.java:83)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="USMSMeterCreate()[pri:3, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:18:36 IST" name="USMSMeterCreate" finished-at="2026-04-07T16:18:36 IST" duration-ms="403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- USMSMeterCreate -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:16:07 IST" name="createTest" finished-at="2026-04-07T16:16:07 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:18:36 IST" name="createTest" finished-at="2026-04-07T16:18:36 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1239,18 +474,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:16:08 IST" name="getResult" finished-at="2026-04-07T16:16:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:18:36 IST" name="getResult" finished-at="2026-04-07T16:18:36 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=USMSMeterCreate status=FAILURE method=USMSUserMeter.USMSMeterCreate()[pri:3, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b] output={null}]]]>
+                <![CDATA[[TestResult name=USMSMeterCreate status=SUCCESS method=USMSUserMeter.USMSMeterCreate()[pri:3, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:16:08 IST" name="createTest" finished-at="2026-04-07T16:16:08 IST" duration-ms="1" status="PASS">
+        <test-method signature="USMSMeterUpdate()[pri:4, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:18:36 IST" name="USMSMeterUpdate" finished-at="2026-04-07T16:18:37 IST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- USMSMeterUpdate -->
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:18:36 IST" name="createTest" finished-at="2026-04-07T16:18:36 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1261,60 +500,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="USMSMeterUpdate()[pri:4, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:16:08 IST" name="USMSMeterUpdate" finished-at="2026-04-07T16:16:08 IST" duration-ms="302" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.USMS.USMSUserMeter.USMSMeterUpdate(USMSUserMeter.java:114)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- USMSMeterUpdate -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:16:08 IST" name="getResult" finished-at="2026-04-07T16:16:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b]" started-at="2026-04-07T16:18:37 IST" name="getResult" finished-at="2026-04-07T16:18:37 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=USMSMeterUpdate status=FAILURE method=USMSUserMeter.USMSMeterUpdate()[pri:4, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b] output={null}]]]>
+                <![CDATA[[TestResult name=USMSMeterUpdate status=SUCCESS method=USMSUserMeter.USMSMeterUpdate()[pri:4, instance:api.testcases.ding.user.USMS.USMSUserMeter@7d20d0b] output={null}]]]>
               </value>
             </param>
           </params>
@@ -1323,11 +513,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- getResult -->
       </class> <!-- api.testcases.ding.user.USMS.USMSUserMeter -->
       <class name="api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories">
-        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:16:03 IST" name="setupBaseURLAndLogin" finished-at="2026-04-07T16:16:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:17:57 IST" name="setupBaseURLAndLogin" finished-at="2026-04-07T16:17:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBaseURLAndLogin -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:16:03 IST" name="createTest" finished-at="2026-04-07T16:16:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:17:57 IST" name="createTest" finished-at="2026-04-07T16:17:57 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1338,67 +528,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetAllCategories()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:16:03 IST" name="GetAllCategories" finished-at="2026-04-07T16:16:04 IST" duration-ms="313" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories.GetAllCategories(MerchantDiscoveryCategories.java:26)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="GetAllCategories()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:17:57 IST" name="GetAllCategories" finished-at="2026-04-07T16:17:57 IST" duration-ms="427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetAllCategories -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:16:04 IST" name="getResult" finished-at="2026-04-07T16:16:04 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:17:57 IST" name="getResult" finished-at="2026-04-07T16:17:57 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetAllCategories status=FAILURE method=MerchantDiscoveryCategories.GetAllCategories()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad] output={null}]]]>
+                <![CDATA[[TestResult name=GetAllCategories status=SUCCESS method=MerchantDiscoveryCategories.GetAllCategories()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:16:04 IST" name="createTest" finished-at="2026-04-07T16:16:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:17:57 IST" name="createTest" finished-at="2026-04-07T16:17:57 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1409,67 +554,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetSingleID()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:16:04 IST" name="GetSingleID" finished-at="2026-04-07T16:16:04 IST" duration-ms="334" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories.GetSingleID(MerchantDiscoveryCategories.java:46)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="GetSingleID()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:17:57 IST" name="GetSingleID" finished-at="2026-04-07T16:17:57 IST" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetSingleID -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:16:04 IST" name="getResult" finished-at="2026-04-07T16:16:04 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:17:57 IST" name="getResult" finished-at="2026-04-07T16:17:57 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetSingleID status=FAILURE method=MerchantDiscoveryCategories.GetSingleID()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad] output={null}]]]>
+                <![CDATA[[TestResult name=GetSingleID status=SUCCESS method=MerchantDiscoveryCategories.GetSingleID()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:16:04 IST" name="createTest" finished-at="2026-04-07T16:16:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:17:57 IST" name="createTest" finished-at="2026-04-07T16:17:57 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1480,67 +580,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetAllCategoriesBaseLImitOffset()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:16:04 IST" name="GetAllCategoriesBaseLImitOffset" finished-at="2026-04-07T16:16:04 IST" duration-ms="296" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories.GetAllCategoriesBaseLImitOffset(MerchantDiscoveryCategories.java:66)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="GetAllCategoriesBaseLImitOffset()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:17:57 IST" name="GetAllCategoriesBaseLImitOffset" finished-at="2026-04-07T16:17:58 IST" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetAllCategoriesBaseLImitOffset -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:16:04 IST" name="getResult" finished-at="2026-04-07T16:16:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:17:58 IST" name="getResult" finished-at="2026-04-07T16:17:58 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetAllCategoriesBaseLImitOffset status=FAILURE method=MerchantDiscoveryCategories.GetAllCategoriesBaseLImitOffset()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad] output={null}]]]>
+                <![CDATA[[TestResult name=GetAllCategoriesBaseLImitOffset status=SUCCESS method=MerchantDiscoveryCategories.GetAllCategoriesBaseLImitOffset()[pri:3, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:16:04 IST" name="createTest" finished-at="2026-04-07T16:16:04 IST" duration-ms="1" status="PASS">
+        <test-method signature="GetCategorieswithSortByOrderLimitOffset()[pri:4, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:17:58 IST" name="GetCategorieswithSortByOrderLimitOffset" finished-at="2026-04-07T16:17:58 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetCategorieswithSortByOrderLimitOffset -->
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:17:58 IST" name="createTest" finished-at="2026-04-07T16:17:58 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1551,60 +610,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetCategorieswithSortByOrderLimitOffset()[pri:4, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:16:04 IST" name="GetCategorieswithSortByOrderLimitOffset" finished-at="2026-04-07T16:16:05 IST" duration-ms="299" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories.GetCategorieswithSortByOrderLimitOffset(MerchantDiscoveryCategories.java:88)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetCategorieswithSortByOrderLimitOffset -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:16:05 IST" name="getResult" finished-at="2026-04-07T16:16:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad]" started-at="2026-04-07T16:17:58 IST" name="getResult" finished-at="2026-04-07T16:17:58 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetCategorieswithSortByOrderLimitOffset status=FAILURE method=MerchantDiscoveryCategories.GetCategorieswithSortByOrderLimitOffset()[pri:4, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad] output={null}]]]>
+                <![CDATA[[TestResult name=GetCategorieswithSortByOrderLimitOffset status=SUCCESS method=MerchantDiscoveryCategories.GetCategorieswithSortByOrderLimitOffset()[pri:4, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories@247bddad] output={null}]]]>
               </value>
             </param>
           </params>
@@ -1613,11 +623,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- getResult -->
       </class> <!-- api.testcases.ding.user.MerchantDiscovery.MerchantDiscoveryCategories -->
       <class name="api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter">
-        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-04-07T16:16:08 IST" name="setupBaseURLAndLogin" finished-at="2026-04-07T16:16:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setupBaseURLAndLogin()[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-04-07T16:18:37 IST" name="setupBaseURLAndLogin" finished-at="2026-04-07T16:18:37 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBaseURLAndLogin -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-04-07T16:16:08 IST" name="createTest" finished-at="2026-04-07T16:16:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-04-07T16:18:37 IST" name="createTest" finished-at="2026-04-07T16:18:37 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1628,67 +638,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="MerchantSearch()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-04-07T16:16:08 IST" name="MerchantSearch" finished-at="2026-04-07T16:16:08 IST" duration-ms="299" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter.MerchantSearch(MerchantDiscoverySearchFilter.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="MerchantSearch()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-04-07T16:18:37 IST" name="MerchantSearch" finished-at="2026-04-07T16:18:37 IST" duration-ms="326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MerchantSearch -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-04-07T16:16:08 IST" name="getResult" finished-at="2026-04-07T16:16:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-04-07T16:18:37 IST" name="getResult" finished-at="2026-04-07T16:18:37 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MerchantSearch status=FAILURE method=MerchantDiscoverySearchFilter.MerchantSearch()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470] output={null}]]]>
+                <![CDATA[[TestResult name=MerchantSearch status=SUCCESS method=MerchantDiscoverySearchFilter.MerchantSearch()[pri:1, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-04-07T16:16:08 IST" name="createTest" finished-at="2026-04-07T16:16:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-04-07T16:18:37 IST" name="createTest" finished-at="2026-04-07T16:18:37 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1699,60 +664,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="GetNewJoiner()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-04-07T16:16:08 IST" name="GetNewJoiner" finished-at="2026-04-07T16:16:09 IST" duration-ms="312" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [200] but found [401]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter.GetNewJoiner(MerchantDiscoverySearchFilter.java:57)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="GetNewJoiner()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-04-07T16:18:37 IST" name="GetNewJoiner" finished-at="2026-04-07T16:18:37 IST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetNewJoiner -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-04-07T16:16:09 IST" name="getResult" finished-at="2026-04-07T16:16:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470]" started-at="2026-04-07T16:18:37 IST" name="getResult" finished-at="2026-04-07T16:18:37 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=GetNewJoiner status=FAILURE method=MerchantDiscoverySearchFilter.GetNewJoiner()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470] output={null}]]]>
+                <![CDATA[[TestResult name=GetNewJoiner status=SUCCESS method=MerchantDiscoverySearchFilter.GetNewJoiner()[pri:2, instance:api.testcases.ding.user.MerchantDiscovery.MerchantDiscoverySearchFilter@7770f470] output={null}]]]>
               </value>
             </param>
           </params>

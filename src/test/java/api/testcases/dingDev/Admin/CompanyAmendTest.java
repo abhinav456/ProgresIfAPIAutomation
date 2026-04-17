@@ -30,6 +30,7 @@ public class CompanyAmendTest extends BaseTest {
 
 	    Assert.assertEquals(response.getStatusCode(), 200);
 	    Assert.assertTrue(response.getTime() < 5000);
+	    test.info("Response Body: " + response.asPrettyString());
 	}
 
 	@Test(priority = 2)

@@ -25,4 +25,22 @@ public class CompanyAmend {
 
         return payload;
     }
+    public static Map<String, Object> CreateUpdateBranchPayload(
+            int branchId,
+            String onlineBranchUrl,
+            String branchType,
+            double locationLat,
+            double locationLang
+    ) {
+
+        Map<String, Object> payload = new HashMap<>();
+
+        payload.put("branch_id", branchId);
+        payload.put("online_branch_url", onlineBranchUrl);
+        payload.put("branch_type", branchType);
+        payload.put("location_lat", locationLat);
+        payload.put("location_lang", locationLang);
+
+        return payload;
+    }
 }
