@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.testcases.ding.user.USMS.USMSPayment">
+      <class name="api.testcases.dingDev.Admin.TagsCRUD">
         <methods>
+          <include name="CreateTags"/>
           <include name="createTest"/>
           <include name="getResult"/>
-          <include name="GetUSMSPaymentWallet"/>
           <include name="tearDownReport"/>
           <include name="setupBaseURLAndLogin"/>
           <include name="setupReport"/>
         </methods>
-      </class> <!-- api.testcases.ding.user.USMS.USMSPayment -->
+      </class> <!-- api.testcases.dingDev.Admin.TagsCRUD -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
