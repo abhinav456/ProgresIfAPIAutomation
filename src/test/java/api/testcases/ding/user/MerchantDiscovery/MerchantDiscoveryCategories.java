@@ -17,7 +17,7 @@ public class MerchantDiscoveryCategories extends BaseTest{
 		  Response response =
 				  given()
 	              .header("Authorization", 
-	                      "Bearer " + ConfigManager.getProperty("access_token"))
+	                      "Bearer " + ConfigManager.getUserToken())
 		            .when()
 		                    .get("/ding/categories")
 		            .then()
@@ -36,7 +36,7 @@ public class MerchantDiscoveryCategories extends BaseTest{
 		  Response response =
 				  given()
 	              .header("Authorization", 
-	                      "Bearer " + ConfigManager.getProperty("access_token"))
+	                      "Bearer " + ConfigManager.getUserToken())
 	                      .queryParam("id", CategoryId)
 		            .when()
 		                    .get("/ding/categories")
@@ -55,7 +55,7 @@ public class MerchantDiscoveryCategories extends BaseTest{
 		  Response response =
 				  given()
 	              .header("Authorization", 
-	                      "Bearer " + ConfigManager.getProperty("access_token"))
+	                      "Bearer " + ConfigManager.getUserToken())
 	                      .queryParam("offset", 0)
 	                      .queryParam("limit", 40)
 		            .when()
@@ -75,7 +75,7 @@ public class MerchantDiscoveryCategories extends BaseTest{
 		  Response response =
 				  given()
 	              .header("Authorization", 
-	                      "Bearer " + ConfigManager.getProperty("access_token"))
+	                      "Bearer " + ConfigManager.getUserToken())
 	                      .queryParam("offset", 0)
 	                      .queryParam("limit", 10)
 	                      .queryParam("sortby", "name")

@@ -21,7 +21,7 @@ public class CompanyAmendTest extends BaseTest {
 	    Response response =
 	    		 given()
                  .header("Authorization", 
-                         "Bearer " + ConfigManager.getProperty("access_token"))
+                         "Bearer " + ConfigManager.getAdminToken())
 	                    .queryParam("id", 1)
 	            .when()
 	                    .get("/ding/company-amends")
@@ -49,7 +49,7 @@ public class CompanyAmendTest extends BaseTest {
 	    Response response =
 	    		 given()
                  .header("Authorization", 
-                         "Bearer " + ConfigManager.getProperty("access_token"))
+                         "Bearer " + ConfigManager.getAdminToken())
 	                    .contentType("application/json")
 	                    .body(requestBody)
 	            .when()

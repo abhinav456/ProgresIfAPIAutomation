@@ -16,7 +16,7 @@ public class MerchantDiscovery extends BaseTest {
 		  Response response =
 				  given()
 	              .header("Authorization", 
-	                      "Bearer " + ConfigManager.getProperty("access_token"))
+	                      "Bearer " + ConfigManager.getUserToken())
 	                      .queryParam("lat", 3.1390)
 	                      .queryParam("lng",101.6869)
 		            .when()
@@ -37,7 +37,7 @@ public class MerchantDiscovery extends BaseTest {
 		  Response response =
 				  given()
 	              .header("Authorization", 
-	                      "Bearer " + ConfigManager.getProperty("access_token"))
+	                      "Bearer " + ConfigManager.getUserToken())
 	                      .queryParam("userLat", 3.1390)
 	                      .queryParam("userLng",101.6869)
 		            .when()
@@ -58,7 +58,7 @@ public class MerchantDiscovery extends BaseTest {
 		  Response response =
 				  given()
 	              .header("Authorization", 
-	                      "Bearer " + ConfigManager.getProperty("access_token"))
+	                      "Bearer " + ConfigManager.getUserToken())
 	                     
 		            .when()
 		                    .get("/ding/dashboard")
@@ -76,7 +76,7 @@ public class MerchantDiscovery extends BaseTest {
 		  Response response =
 				  given()
 	              .header("Authorization", 
-	                      "Bearer " + ConfigManager.getProperty("access_token"))
+	                      "Bearer " + ConfigManager.getUserToken())
 	              .queryParam("lat", 89.421998333333335)
                   .queryParam("lng",-122.08)
                   .queryParam("offset", 0)

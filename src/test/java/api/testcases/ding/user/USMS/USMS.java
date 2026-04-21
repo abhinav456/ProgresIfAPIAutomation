@@ -21,7 +21,7 @@ public class USMS extends BaseTest {
 	  Response response =
 			  given()
               .header("Authorization", 
-                      "Bearer " + ConfigManager.getProperty("access_token"))
+                      "Bearer " + ConfigManager.getUserToken())
 	                    .queryParam("limit", 100)
 	            .when()
 	                    .get("/ding/usms/dashboard")
@@ -45,7 +45,7 @@ public class USMS extends BaseTest {
   	    Response response =
   	    		 given()
                  .header("Authorization", 
-                         "Bearer " + ConfigManager.getProperty("access_token"))
+                         "Bearer " + ConfigManager.getUserToken())
   	                    .contentType("application/json")
   	                    .body(requestBodyGetMeter)
   	            .when()
@@ -71,7 +71,7 @@ public class USMS extends BaseTest {
   	    Response response =
   	    		 given()
                  .header("Authorization", 
-                         "Bearer " + ConfigManager.getProperty("access_token"))
+                         "Bearer " + ConfigManager.getUserToken())
   	                    .contentType("application/json")
   	                    .body(requestBodyGetMeterHistory)
   	            .when()

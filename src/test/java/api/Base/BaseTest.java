@@ -60,6 +60,36 @@ public class BaseTest {
 
     	    System.out.println("Token saved successfully");
     	    
+    	    //Admin Payload
+    	    Map<String, String> adminpayload = new HashMap<>();
+    	    adminpayload.put("grant_type", "password");
+    	    adminpayload.put("username", UserLogins.getAdminUsername());
+    	    adminpayload.put("password", UserLogins.getAdminPassword());
+    	    adminpayload.put("version", "1.0.0");
+
+    	    // Headers
+    	    Map<String, String> adminheaders = new HashMap<>();
+    	    adminheaders.put("Content-Type", "application/json");
+
+    	    // Login API
+    	    Response adminresponse = UserEndPoints.post(
+    	            "/ding/company/login",
+    	            adminpayload,
+    	            adminheaders
+    	    );
+
+    	    String adminaccessToken = adminresponse.jsonPath().getString("access_token");
+
+    	    Properties admintokenProp = new Properties();
+    	    admintokenProp.setProperty("access_token", adminaccessToken);
+
+    	    FileOutputStream adminfos =
+    	            new FileOutputStream("src/test/resources/admintoken.properties");
+    	    admintokenProp.store(adminfos, "Admin Token Saved");
+    	    adminfos.close();
+
+    	    System.out.println("Admin Token saved successfully");
+    	    
     	}
 
     @BeforeClass

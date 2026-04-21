@@ -25,7 +25,7 @@ public class USMSBannerCRUD extends BaseTest{
 	  Response response =
 			  given()
               .header("Authorization", 
-                      "Bearer " + ConfigManager.getProperty("access_token"))
+                      "Bearer " + ConfigManager.getAdminToken())
 	                    .queryParam("limit", 100)
 	            .when()
 	                    .get("ding/usms/banners")
@@ -52,7 +52,7 @@ public class USMSBannerCRUD extends BaseTest{
       Response response =
     		  given()
               .header("Authorization", 
-                      "Bearer " + ConfigManager.getProperty("access_token"))
+                      "Bearer " + ConfigManager.getAdminToken())
                       .contentType("application/json")
                       .body(requestBodyCreate)
               .when()
@@ -103,7 +103,7 @@ public void UpdateBanner() {
 	    Response response =
 	    		 given()
                  .header("Authorization", 
-                         "Bearer " + ConfigManager.getProperty("access_token"))
+                         "Bearer " + ConfigManager.getAdminToken())
 	                    .contentType("application/json")
 	                    .body(requestBodyUpdate)
 	            .when()
@@ -133,7 +133,7 @@ public void UpdateBanner() {
   	    Response response =
   	    		 given()
                  .header("Authorization", 
-                         "Bearer " + ConfigManager.getProperty("access_token"))
+                         "Bearer " + ConfigManager.getAdminToken())
   	                    .contentType("application/json")
   	                    .body(requestBodyUpdate)
   	            .when()

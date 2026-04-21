@@ -22,7 +22,7 @@ public class USMSUserMeter extends BaseTest{
 		  Response response =
 				  given()
 	              .header("Authorization", 
-	                      "Bearer " + ConfigManager.getProperty("access_token"))
+	                      "Bearer " + ConfigManager.getUserToken())
 		                    
 		            .when()
 		                    .get("/ding/usms/meters")
@@ -42,7 +42,7 @@ public class USMSUserMeter extends BaseTest{
 		  Response response =
 				  given()
 	              .header("Authorization", 
-	                      "Bearer " + ConfigManager.getProperty("access_token"))
+	                      "Bearer " + ConfigManager.getUserToken())
 		                    
 		            .when()
 		                    .delete("/ding/usms/meters/"+ MeterID)
@@ -72,7 +72,7 @@ public class USMSUserMeter extends BaseTest{
 		    Response response =
 		    		 given()
 	               .header("Authorization", 
-	                       "Bearer " + ConfigManager.getProperty("access_token"))
+	                       "Bearer " + ConfigManager.getUserToken())
 		                    .contentType("application/json")
 		                    .body(requestCreateMeter)
 		            .when()
@@ -103,7 +103,7 @@ public class USMSUserMeter extends BaseTest{
 		    Response response =
 		    		 given()
 	               .header("Authorization", 
-	                       "Bearer " + ConfigManager.getProperty("access_token"))
+	                       "Bearer " + ConfigManager.getUserToken())
 		                    .contentType("application/json")
 		                    .body(requestUpdateMeter)
 		            .when()

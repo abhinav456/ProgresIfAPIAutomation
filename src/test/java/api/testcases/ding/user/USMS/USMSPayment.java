@@ -36,7 +36,7 @@ public class USMSPayment extends BaseTest{
 	    Response response =
 	    		 given()
                .header("Authorization", 
-                       "Bearer " + ConfigManager.getProperty("access_token"))
+                       "Bearer " + ConfigManager.getUserToken())
 	                    .contentType("application/json")
 	                    .body(requestBodySessionPayment)
 	            .when()
@@ -70,7 +70,7 @@ public class USMSPayment extends BaseTest{
 	    Response response =
 	    		 given()
                .header("Authorization", 
-                       "Bearer " + ConfigManager.getProperty("access_token"))
+                       "Bearer " + ConfigManager.getUserToken())
 	                    .contentType("application/json")
 	                    .body(requestBodyCardPayment)
 	            .when()
@@ -100,7 +100,7 @@ public class USMSPayment extends BaseTest{
 	    Response response =
 	    		 given()
                .header("Authorization", 
-                       "Bearer " + ConfigManager.getProperty("access_token"))
+                       "Bearer " + ConfigManager.getUserToken())
 	                    .contentType("application/json")
 	                    .body(requestBodyExitCardPayment)
 	            .when()
@@ -127,7 +127,7 @@ public class USMSPayment extends BaseTest{
 	    Response response =
 	    		 given()
                .header("Authorization", 
-                       "Bearer " + ConfigManager.getProperty("access_token"))
+                       "Bearer " + ConfigManager.getUserToken())
 	                    .contentType("application/json")
 	                    .body(requestBodyPaymentWallet)
 	            .when()

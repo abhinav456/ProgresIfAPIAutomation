@@ -38,7 +38,7 @@ public class TagsCRUD extends BaseTest{
 	        Response response =
 	                given()
 	                        .header("Authorization",
-	                                "Bearer " + ConfigManager.getProperty("access_token"))
+	                                "Bearer " + ConfigManager.getAdminToken())
 	                        .contentType("application/json")
 	                        .body(payload)
 	                .when()

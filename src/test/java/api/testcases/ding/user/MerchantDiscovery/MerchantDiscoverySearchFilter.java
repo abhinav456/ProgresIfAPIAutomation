@@ -24,7 +24,7 @@ public class MerchantDiscoverySearchFilter extends BaseTest {
 		    Response response =
 		    		 given()
 	               .header("Authorization", 
-	                       "Bearer " + ConfigManager.getProperty("access_token"))
+	                       "Bearer " + ConfigManager.getUserToken())
 		                    .contentType("application/json")
 		                    .body(requestSearchMerchant)
 		            .when()
@@ -45,7 +45,7 @@ public class MerchantDiscoverySearchFilter extends BaseTest {
 		  Response response =
 				  given()
 	              .header("Authorization", 
-	                      "Bearer " + ConfigManager.getProperty("access_token"))
+	                      "Bearer " + ConfigManager.getUserToken())
 	                      .queryParam("offset", 0)
 	                      .queryParam("limit",12)
 	                      .queryParam("favourites",true)

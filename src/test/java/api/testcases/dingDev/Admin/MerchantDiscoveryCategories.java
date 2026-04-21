@@ -34,7 +34,7 @@ public class MerchantDiscoveryCategories extends BaseTest {
 		    Response response =
 		    		 given()
 	               .header("Authorization", 
-	                       "Bearer " + ConfigManager.getProperty("access_token"))
+	                       "Bearer " + ConfigManager.getAdminToken())
 		                    .contentType("application/json")
 		                    .body(requestBody)
 		            .when()
@@ -51,12 +51,10 @@ public class MerchantDiscoveryCategories extends BaseTest {
 		    // Store values
 		    categoryId = jsonPath.getInt("categoryCreated.id");
 		    categoryName = jsonPath.getString("categoryCreated.category_name");
-		    categoryCode = jsonPath.getString("categoryCreated.category_code");
 
 		    // Print values
 		    System.out.println("Saved category_id: " + categoryId);
 		    System.out.println("Saved category_name: " + categoryName);
-		    System.out.println("Saved category_code: " + categoryCode);
 
 		    test.info("Response Body: " + response.asPrettyString());
 		}
@@ -67,7 +65,6 @@ public class MerchantDiscoveryCategories extends BaseTest {
 		  Map<String, Object> requestBody =
 				  MerchantCategories.UpdateCategoryPayload(
 						    categoryName,
-					        categoryCode,
 					        "https://example.com/icons/electronics.png",
 					        2,
 					        10,
@@ -79,7 +76,7 @@ public class MerchantDiscoveryCategories extends BaseTest {
 		    Response response =
 		    		 given()
 	               .header("Authorization", 
-	                       "Bearer " + ConfigManager.getProperty("access_token"))
+	                       "Bearer " + ConfigManager.getAdminToken())
 		                    .contentType("application/json")
 		                    .body(requestBody)
 		            .when()
@@ -97,7 +94,7 @@ public class MerchantDiscoveryCategories extends BaseTest {
 		    Response response =
 		    		 given()
 	               .header("Authorization", 
-	                       "Bearer " + ConfigManager.getProperty("access_token"))
+	                       "Bearer " + ConfigManager.getAdminToken())
 		                    .contentType("application/json")
 		                    
 		            .when()

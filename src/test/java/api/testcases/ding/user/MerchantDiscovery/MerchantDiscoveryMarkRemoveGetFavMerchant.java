@@ -17,7 +17,7 @@ public class MerchantDiscoveryMarkRemoveGetFavMerchant extends BaseTest {
 	  Response response =
 			  given()
               .header("Authorization", 
-                      "Bearer " + ConfigManager.getProperty("access_token"))
+                      "Bearer " + ConfigManager.getUserToken())
                        .queryParam("lat", 89.421998333333335)
                        .queryParam("lng", -122.08)
                        .queryParam("offset", 0)
@@ -40,7 +40,7 @@ public class MerchantDiscoveryMarkRemoveGetFavMerchant extends BaseTest {
 	  Response response =
 			  given()
               .header("Authorization", 
-                      "Bearer " + ConfigManager.getProperty("access_token"))
+                      "Bearer " + ConfigManager.getUserToken())
                        
 	            .when()
 	                    .delete("/ding/"+FavID+"/favourites")
@@ -63,7 +63,7 @@ public class MerchantDiscoveryMarkRemoveGetFavMerchant extends BaseTest {
 	  Response response =
 			  given()
               .header("Authorization", 
-                      "Bearer " + ConfigManager.getProperty("access_token"))
+                      "Bearer " + ConfigManager.getUserToken())
                        
 	            .when()
 	                    .post("/ding/"+FavID+"/favourites")
